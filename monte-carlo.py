@@ -79,10 +79,10 @@ class Function:
 
 		return np.average(values)
 
-fn1 = Function(lambda x : np.sin(x[1]) + np.cos(x[0]), 2, [(-PI, PI) for i in range(2)])
-fn2 = Function(lambda x : (x[9] + x[8] +x[7] + x[6] + x[5] + x[4] + x[3] + x[2] + x[1] + x[0])**2, 10, [(0, 1) for i in range(10)])
+#fn1 = Function(lambda x : np.sin(x[1]) + np.cos(x[0]), 2, [(-PI, PI) for i in range(2)])
+#fn2 = Function(lambda x : (x[9] + x[8] +x[7] + x[6] + x[5] + x[4] + x[3] + x[2] + x[1] + x[0])**2, 10, [(0, 1) for i in range(10)])
 
-print("average: " + str(fn1.MCIntegrate(64, 64, plotData = True)))
-print("average: " + str(fn2.MCIntegrate(64, 64)))
+#print("average: " + str(fn1.MCIntegrate(64, 64, plotData = True)))
+#print("average: " + str(fn2.MCIntegrate(64, 64)))
 	
 plt.show()
